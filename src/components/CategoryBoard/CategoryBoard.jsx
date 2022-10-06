@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import { Category } from "../Category/Category";
+import css from "./CategoryBoard.module.css";
 
 export const CategoryBoard = ({ categories }) => {
   return (
     <section>
-      <ul>
+      <ul className={css.categoryBoard}>
         {categories.map(category => (
           <Category
             key={category.idCategory}
