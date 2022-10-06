@@ -1,11 +1,18 @@
 import PropTypes from "prop-types";
+import css from "./Category.module.css";
 
 export const Category = ({ strCategoryThumb, strCategory }) => {
   return (
-    <li>
-      <a href={strCategory}>
-        <img src={strCategoryThumb} alt={strCategory} />
-        <p>{strCategory}</p>
+    <li className={css.category}>
+      <a className={css.link} href={strCategory}>
+        <img
+          className={css.image}
+          src={strCategoryThumb}
+          alt={strCategory}
+          width="160px"
+          height="100px"
+        />
+        <p className={css.name}>{strCategory}</p>
       </a>
     </li>
   );

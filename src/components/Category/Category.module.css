@@ -1,0 +1,18 @@
+.category {
+  display: inline-block;
+}
+
+.link {
+  display: block;
+  border: 1px dashed black;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+}
+
+.name {
+  text-align: center;
+}
