@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Meal } from "components/Meal/Meal";
-import css from "./MealList.module.css";
+import css from "./MealBoard.module.css";
 
-export const MealList = () => {
+export const MealBoard = () => {
   const { category } = useParams();
 
   const [list, setList] = useState([]);
@@ -21,8 +21,9 @@ export const MealList = () => {
         {list.map(meal => (
           <Meal
             key={meal.idMeal}
-            strCategoryThumb={meal.strMealThumb}
-            strCategory={meal.strMeal}
+            idMeal={meal.idMeal}
+            strMealThumb={meal.strMealThumb}
+            strMeal={meal.strMeal}
           />
         ))}
       </ul>
