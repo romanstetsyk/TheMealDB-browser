@@ -1,0 +1,23 @@
+.category {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.link {
+  display: block;
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  text-align: center;
+}
