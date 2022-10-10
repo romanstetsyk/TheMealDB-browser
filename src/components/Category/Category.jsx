@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import css from "./Category.module.css";
 
 export const Category = ({ strCategoryThumb, strCategory }) => {
   return (
     <li className={css.category}>
-      <a className={css.link} href={strCategory}>
+      <Link className={css.link} to={strCategory}>
         <img
           className={css.image}
           src={strCategoryThumb}
@@ -13,7 +14,7 @@ export const Category = ({ strCategoryThumb, strCategory }) => {
           height="100px"
         />
         <p className={css.name}>{strCategory}</p>
-      </a>
+      </Link>
     </li>
   );
 };

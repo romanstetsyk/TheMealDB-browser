@@ -1,7 +1,7 @@
 .categoryBoard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, auto));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  gap: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }

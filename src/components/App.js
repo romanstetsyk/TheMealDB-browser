@@ -1,12 +1,15 @@
-import { PageTitle } from "./PageTitle/PageTitle";
-import { CategoryBoard } from "./CategoryBoard/CategoryBoard";
-import categoriesResponse from "../categoriesResponse.json";
+import { Routes, Route } from "react-router-dom";
+import { CategoryBoard } from "pages/CategoryBoard/CategoryBoard";
+import { SharedLayout } from "components/SharedLayout/SharedLayout";
 
 function App() {
   return (
     <>
-      <PageTitle text="Meal Catalog" />
-      <CategoryBoard categories={categoriesResponse.categories} />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<CategoryBoard />} />
+        </Route>
+      </Routes>
     </>
   );
 }
