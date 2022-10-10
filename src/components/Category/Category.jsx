@@ -5,7 +5,7 @@ import css from "./Category.module.css";
 export const Category = ({ strCategoryThumb, strCategory }) => {
   return (
     <li className={css.category}>
-      <Link className={css.link} to={strCategory}>
+      <Link className={css.link} to={strCategory.toLowerCase()}>
         <img
           className={css.image}
           src={strCategoryThumb}
