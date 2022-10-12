@@ -13,7 +13,7 @@ export const MealDetails = () => {
         console.log(json.meals[0]);
         setMeal(json.meals[0]);
       });
-  }, []);
+  }, [idMeal]);
 
   return (
     <div>
